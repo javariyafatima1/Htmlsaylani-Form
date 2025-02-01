@@ -2,262 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>Responsive Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .container h1 {
+            text-align: center;
+            color: blue;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+        @media (max-width: 500px) {
+            .btn-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <center><img src="image/logo.png"></center>
-    <h1 colur="blue"> <center><u> STUDUNT REGISTRATION FORM </center></u></h1>
-    <form style="background-color: rgb(83, 68, 247); padding: 8px; color: rgb(254, 248, 248);">
-        <table>
-             <tr>
-            <td> First Name:</td>
-            <td><input type="Name" placeholder="Enter your first Name" 
-            <td> (max 30 characters a-z And A-Z)</td>
-             </tr>
-             <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
-
-             
-             <tr>
-              <td> Last Name:</td>
-              <td> <input type="Name" placeholder="Enter your last Name"
-              <td> (max 30 characters a-z And A-Z)</td>
-              
-              
-             </tr>
-             <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
-             <tr>
-                <td> Date of birth</td>
-                
-                <td>
-                    <select name="Day">
-                        <option hidden> Date</option>
-                        <option name="Day" value="1">1</option>
-                        <option name="Day" value="2">2</option>
-                        <option name="Day" value="3">3</option>
-                        <option name="Day" value="4">4</option>
-                        <option name="Day" value="5">5</option>
-                        <option name="Day" value="6">6</option>
-                        <option name="Day" value="7">7</option>
-                        <option name="Day" value="8">8</option>
-                        <option name="Day" value="9">9</option>
-                        <option name="Day" value="10">10</option>
-                        <option name="Day" value="11">11</option>
-                        <option name="Day" value="12">12</option>
-                        <option name="Day" value="13">13</option>
-                        <option name="Day" value="14">14</option>
-                        <option name="Day" value="15">15</option>
-                        <option name="Day" value="16">16</option>
-                        <option name="Day" value="17">17</option>
-                        <option name="Day" value="18">18</option>
-                        <option name="Day" value="19">19</option>
-                        <option name="Day" value="20">20</option>
-                        <option name="Day" value="21">21</option>
-                        <option name="Day" value="22">22</option>
-                        <option name="Day" value="23">23</option>
-                        <option name="Day" value="24">24</option>
-                        <option name="Day" value="25">25</option>
-                        <option name="Day" value="26">26</option>
-                        <option name="Day" value="27">27</option>
-                       <option name="Day" value="28">28</option>
-                       <option name="Day" value="29">29</option>
-                       <option name="Day" value="30">30</option>
-                       </select>
-                       
-                
-                 
-                       <select name="month">
-                    
-                        <option hidden> Month</option>
-                        <option name="Month" value="January">January</option>
-                        <option name="Month" value="Februry">Februry</option>
-                        <option name="Month" value="March">March</option>
-                        <option name="Month" value="Aprail">Aprail</option>
-                        <option name="Month" value="May">May</option>
-                        <option name="Month" value="June">June</option>
-                        <option name="Month" value="July">July</option>
-                        <option name="Month" value="August">August</option>
-                        <option name="Month" value="September">September</option>
-                        <option name="Month" value="Octuber">Octuber</option>
-                        <option name="Month" value="November">November</option>
-                        <option name="Month" value="December">December</option>
-                        </select>
-                        
-                       <select name="Year">
-                    
-                        <option hidden> year</option>
-                        <option name="year" value="1990">1990</option>
-                        <option name="year" value="1991">1991</option>
-                        <option name="year" value="1992">1992</option>
-                        <option name="year" value="1993">1993</option>
-                        <option name="year" value="1994">1994</option>
-                        <option name="year" value="1995">1995</option>
-                        <option name="year" value="1996">1996</option>
-                        <option name="year" value="1997">1997</option>
-                        <option name="year" value="1998">1998</option>
-                        <option name="year" value="1999">1999</option>
-                        <option name="year" value="2000">2000</option>
-                        <option name="year" value="2001">2001</option>
-                        <option name="year" value="2002">2002</option>
-                        <option name="year" value="2003">2003</option>
-                        <option name="year" value="2004">2004</option>
-                        <option name="year" value="2005">2005</option>
-                        <option name="year" value="2006">2006</option>
-                        <option name="year" value="2007">2007</option>
-                        <option name="year" value="2008">2008</option>
-                        <option name="year" value="2009">2009</option>
-                        <option name="year" value="2010">2010</option>
-                        </select></tr>
-                        <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
-                        <tr>
-                            <td> EMAIL ID:</td>
-                            <td> <input type="EMAIL" name="email" required placeholder="Enter email address" </td>
-                            
-                           </tr>
-                           <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
-
-                            <tr>
-                                <td> MOBILE NUMBER</td>
-                                <td><input type="number" name="email"  placeholder="Enter Mobile Number" value="number"
-                            <td> (10 digit number)</td>
-                            </tr>
-                            <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
-                            <tr>
-                                <td>GENDER:</td>
-                                <td> <input type="radio" name="gender" value="Male" />Male 
-                                    <input type="radio" name="gender" value="Female" />Female</td>
-                            </tr>
-                            <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
-                            <tr>
-                                <td> ADDRESS:</td>
-                                <td>
-                            
-                                <textarea colspan="30" rowspan="10"></textarea></td>
-
-                                
-                                
-                            </tr>
-                            <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
-                            
-                            <tr>
-                                <td>CITY:</td>
-                                <td><input  name="CITY"  placeholder="Enter City"  
-                            <td> (max 30 characters a-z And A-Z)</td> 
-                            </tr>
-
-                            <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
-                            <tr>
-
-                                <td>PIN CODE:</td>
-                                <td><input  name="pin code"  placeholder="Enter Pin Code" 
-                                <td> (6 digit Number)</td> 
-
-                            </tr>
-                            <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
-                            <tr>
-                                <td>  STATE:</td>
-
-                                <td><input  name="state"  placeholder="Enter State" <td> (Max 30 Characters a-z And A-Z)</td> 
-                            
-                                
-                            </tr>
-                            <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
-                            <tr>
-                                <td> COUNTRY:</td>
-                                
-                                <td><input  name="COUNTRY"  placeholder="Enter Country" </td>
-                                </tr>
-                                <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
-                                <tr>
-                                    <td>HOBBIES:</td>
-                                    <td> 
-                                        <input name="HOBBIES" value="Drawing" type="checkbox"/>Drawing
-                                        <input name="HOBBIES" value="Singing" type="checkbox"/>Singing
-                                     <input name="HOBBIES" value="Dancing" type="checkbox"/>Dancing
-                                        
-                                     <input name="HOBBIES" value="Sketching" type="checkbox"/>Sketching
-                                     </td>
-                                     <tr>
-                                        <td></td>
-
-                                        <td> Others<input name="hobbies" value="other" type="checkbox"/><input type="text"/>
-                                        
-                                            
-                                       
-                                        
-                                     
-
-                                            
-                                </tr>
-                                <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
-                                <tr>
-                                    <td>QUALIFICATION </td>
-                                    <td> SR.NO &nbsp;Examination &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Board&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Percentage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Year of Passing</td>
-                                    
-                                    
-                                    
-                                    
-                                </tr>
-                                <tr>
-                                    <td rowspan="5"></td>
-
-                                    <td> 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Classx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/></td>
-
-                                </tr>
-                                <tr>
-
-
-                                <td> 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspClassX11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/></td>
-
-                            </tr>
-                            <tr>
-
-
-                                <td> 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Graduaction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/></td>
-
-                            </tr>
-
-                            <tr>
-
-
-                                <td> 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ClassX11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="type"/></td>
-
-                            </tr>
-                            <td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</td>
-                            <tr>
-                                <td>COURSES</br> APPLIED FOR</td>
-                                <td> 
-                                    <input name="SUBJECT" value="BCA" type="radio"/>BCA
-                                    <input name="SUBJECT" value="B.COM" type="radio"/>B.COM
-                                 <input name="SUBJECT" value="BS.C" type="radio"/>BS.C
-                                    
-                                 <input name="SUBJECT" value="B.A" type="radio"/>B.A
-                                 </td>
-                            </tr>
-
-                        </table>
-                           
-                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp &nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp&nbsp;&nbsp;&nbsp; &nbsp;&nbsp<button>SUBMIT</button>
-
-                      &nbsp;&nbsp; &nbsp;&nbsp<button>RESET</button>        
-                             
-                        
-                                </tr>
-                             </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </form>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form>
+            <div class="form-group">
+                <label>First Name:</label>
+                <input type="text" placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <label>Last Name:</label>
+                <input type="text" placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label>Mobile Number:</label>
+                <input type="tel" placeholder="Enter your mobile number">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Address:</label>
+                <textarea rows="3" placeholder="Enter your address"></textarea>
+            </div>
+            <div class="btn-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
